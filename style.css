@@ -17,6 +17,7 @@ body {
 
 .summary {
     overflow: auto;
+    padding-left: 40px;
     text-align: left;
 }
 
