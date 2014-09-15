@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<meta name="author" content="Håkon Ø. Løvdal, Fredrik Berg">
+	<meta name="author" content="Håkon Ø. Løvdal, Fredrik C. Berg, Truls M. Pettersen ">
 	<title>Project draft</title>
 	<link rel="stylesheet" href="style.css">
 	<style type="text/css"></style>
@@ -15,7 +15,7 @@
 		<hr>
         <div class="container">
             <div class="col50">
-                <h3>Tusenfryd</h3>
+                <h3><a href="http://tusenfryd.no">Tusenfryd</a> &ndash; <a href="pdf/tusenfryd_form.pdf">(Checklist)</a></h3>
                 <ul>
                     <li><h4>Title:</h4>
                     <p>The sites titles are set up in a way that distinguises the different pages on the website. It also easy to know the current page you are on, and within the Tusenfryd website. The way it's set up is with "Current page you are on | Tusenfryd". This is easy to read, and seems to us as a good and clean solution.</p>
@@ -42,18 +42,48 @@
                     <p> Other than images, there are surprisingly few multimedia objects on the site. As we discussed before, many of the images does not have an alt tag. The few videoes we could find on the website, which were of the different attractions in the park, had a description of the attraction next to it. The videos are links to youtube.com, and the media player is accessible by keyboard, and also has support for captions and other important options.</p>
                     </li>
                     <li><h4>Basic structure check</h4>
-                    <p></p>
+                    <p>After removing the CSS and the images from the website, it doesen't really make sense anymore. Some of the text is correctly placed under its parent header, others are seemingly randomly placed. As a whole, the main page is not in any way split into the different sections. The alt tags are mostly empty, and does not display any useful information about the picture, as discussed before. The form for ordering tickets does not work at all, it is possible to select the number of tickets and the number of days, but we could not find any way of proceeding to the next step in the ordering process. </p>
                     </li>
                 </ul>          
             </div>
             <div class="col50">
-                <h3>Skarnes Lekeland</h3>            
-            </div>
+                <h3><a href="http://skarneslekeland.no">Skarnes Lekeland</a> &ndash; <a href="pdf/skarnes_form.pdf">(Checklist)</a></h3>  
+                <ul>
+                    <li><h4>Title:</h4>
+                    <p>The sites titles are set up in a way that distinguises the different pages on the website. It also easy to know the current page you are on, and within the Tusenfryd website. The way it's set up is with "Current page you are on | Tusenfryd". This is easy to read, and seems to us as a good and clean solution.</p>
+                    </li>
+                    <li><h4>Image/text alternatives:</h4>
+                    <p>We discovered that some images has an alt-tag describing the image, while some didn't. This seems inconsistent and does not follow the HTML convention. However the images that had an alt-tag was well described and it would be easy for someone who couldn't see the image, to understand the meaning of the image.</p>
+                    </li>
+                    <li><h4>Headings:</h4>
+                    <p>Our discoveries show that the page has inconsistent use of headings. The main header is an H1-tag. However, some sections start with and H2- or H3-tag, but subheaders are made with p- or a-tags. This does not follow a meaningful heading-hierarchy. There are also elements that looks like headings, that are marked as p-tags.</p>
+                    </li>
+                    <li><h4>Contrast ratio:</h4>
+                    <p>The contrast between text and background generally seems consistent. The information part of the page uses black text on a white background, which is acceptable. In the header, the text is white on a pink background. It's easy to distinguish between the two, but it seems a bit tireing for the eyes to look at. It might also be a hard to interpret the page as a whole, due to the use of alot of different, bright colors that easily catches the eye.</p>
+                    </li>
+                    <li><h4>Resize text:</h4>
+                    <p>The page scales very well. It's no problem to zoom in or out. No text gets cut of, or overlaps. All the buttons and field are still visible. The images and text on them also scales like the rest of the page.</p>
+                    </li>
+                    <li><h4>Keyboard access and visual focus:</h4>
+                    <p><i>On a Mac with Safari</i> we were only able to tab through forms and input fields. The navigation bar were not available. <i>On a Windows with Firefox</i> we were able reach the navigation bar, however there were no visual feedback telling which element was selected. As a test we tried order tickets online without using a mouse, but this proved to be impossible. In conclusion this website does not support good keyboard access.</p>
+                    </li>
+                    <li><h4>Forms, labels and errors:</h4>
+                    <p>Some forms are possible to tab through, while some, for example the date selection is not accessible with a keyboard. There are not displayed any error messages if you try to order zero tickets, it just reloads the form. All the labels follow the convention for left-to-right languages. However the labels are made with H5-tags, not label-tags and thus doesen't have the attributes. The form fields does not have anything indicating that it is mandatory. Considering that there is no error handling either, this might seem rather unintuitive to a novice user.</p>
+                    </li>
+                    <li><h4>Multimedia alternatives:</h4>
+                    <p> Other than images, there are surprisingly few multimedia objects on the site. As we discussed before, many of the images does not have an alt tag. The few videoes we could find on the website, which were of the different attractions in the park, had a description of the attraction next to it. The videos are links to youtube.com, and the media player is accessible by keyboard, and also has support for captions and other important options.</p>
+                    </li>
+                    <li><h4>Basic structure check</h4>
+                    <p>After removing the CSS and the images from the website, it doesen't really make sense anymore. Some of the text is correctly placed under its parent header, others are seemingly randomly placed. As a whole, the main page is not in any way split into the different sections. The alt tags are mostly empty, and does not display any useful information about the picture, as discussed before. The form for ordering tickets does not work at all, it is possible to select the number of tickets and the number of days, but we could not find any way of proceeding to the next step in the ordering process. </p>
+                    </li>
+                </ul>      
+             </div>
         </div>
 	<footer>
 		<div class="container">
 			<small>&copy; Håkon Ødegård Løvdal (haakool)<br></small>
-            <small>Fredrik Christoffer Berg (fredrcb)</small>
+            <small>Fredrik Christoffer Berg (fredrcb)<br></small>
+			<small>Truls Mørk Pettersen (trulsmp)</small>
 		</div>
 	</footer>
 	</div>
