@@ -11,12 +11,20 @@
 	<div class="wrapper">
 		<div class="container">
 			<h1>Exercise 4<small> &ndash; project draft</small></h1>
+            <nav>
+                <ul id="navul">
+                    <li><a href="#task1">Task 1</a></li>
+                    <li><a href="#task2">Task 2</a></li>
+                    <li><a href="#summary">Summary</a></li>
+                    <li><a href="#task3">Task 3</a></li>
+                </ul>
+            </nav>
 		</div>
 		<hr>
         <div class="container">
-            <div class="col50">
-                <h3><a href="http://tusenfryd.no">Tusenfryd</a> &ndash; <a href="pdf/tusenfryd_form.pdf">(Checklist)</a></h3>
-                <ul>
+            <div class="col50" id="task1">
+                <h3><a href="http://tusenfryd.no">Tusenfryd</a></h3>
+                <ul id="list">
                     <li><h4>Title:</h4>
                     <p>The sites titles are set up in a way that distinguises the different pages on the website. It also easy to know the current page you are on, and within the Tusenfryd website. The way it's set up is with "Current page you are on | Tusenfryd". This is easy to read, and seems to us as a good and clean solution.</p>
                     </li>
@@ -44,11 +52,12 @@
                     <li><h4>Basic structure check</h4>
                     <p>After removing the CSS and the images from the website, it doesen't really make sense anymore. Some of the text is correctly placed under its parent header, others are seemingly randomly placed. As a whole, the main page is not in any way split into the different sections. The alt tags are mostly empty, and does not display any useful information about the picture, as discussed before. The form for ordering tickets does not work at all, it is possible to select the number of tickets and the number of days, but we could not find any way of proceeding to the next step in the ordering process. </p>
                     </li>
+                    <li><h4><a href="pdf/tusenfryd_form.pdf">Checklist from UoM</a></h4></li>
                 </ul>          
             </div>
-            <div class="col50">
-                <h3><a href="http://skarneslekeland.no">Skarnes Lekeland</a> &ndash; <a href="pdf/skarnes_form.pdf">(Checklist)</a></h3>  
-                <ul>
+            <div class="col50" id="task2">
+                <h3><a href="http://skarneslekeland.no">Skarnes Lekeland</a></h3>  
+                <ul id="list">
                     <li><h4>Title:</h4>
                     <p>The start of the title field is decently set up for all the pages on the site. It's a description of the current page on the site. After that though, the title field has a very long description of the last news posted on the main page. This makes it a really long title, which really doesen't make any sense. A title describing the website, and the current page would be much more fitting, and easier to read.</p>                    
                     </li>
@@ -74,15 +83,17 @@
                     <li><h4>Basic structure check</h4>
                     <p>Without the CSS and images showing on the website, it still remains structured and it's easy to access the different parts of the website. The structure of the site is well built and remains so throughout the website.</p>                    
                     </li>
+                    <li><h4><a href="pdf/tusenfryd_form.pdf">Checklist from UoM</a></h4></li>
                 </ul>      
              </div>
         </div>
-        <div class="summary container">
+        <div class="summary container" id="summary">
             <h3>Summary:</h3>
             <p>Originally we thought that tusenfryd.no would be the better of the two websites, however we have after the analysis come to a conclusion that the quality of the website depends on more than the first look. Both of the websites have several faults in both their design and structure, and therefore it is not evident what website comes out on top. Tusenfryd.no does indeed look a lot better at first sight and has more options for scaling than skarneslekeland.no, but it is lacking on several key functionalities that makes the site easier to use.</p>
         </div>
-		<div class="container">
-			<h2> Project draft </h2>
+        <hr>
+		<div class="draft container" id="task3">
+			<h2>Project draft</h2>
 			<p> In this project, our plan is to design a website for a fictive theme park. The goal of the
 site, will be to show potential customers the attractions and event in the park, as well as system allowing 
 us to sell tickets online. We also want to include a map, and general information about the park, in a way 
@@ -95,8 +106,7 @@ for our restaurant, contact page and events happening at the park. We also need 
 ticket prices and allow you to order tickets online. Lastly, we will have a page with information about 
 renting the park for parties, birthdays and so on. To sum up, these are the sites and their respective titles. </p>
 			
-			<div class="container">
-			<ul>
+			<ul class="draftlist" id="list">
 				<li> InsertParkName - Main page </li>
 				<li> InsertParkName - Attraction1 </li>
 				<li> InsertParkName - Attraction2  </li>
@@ -110,7 +120,6 @@ renting the park for parties, birthdays and so on. To sum up, these are the site
 				<li> InsertParkName - Tickets </li>
 				<li> InsertParkName - Rent the park </li>
 			</ul>
-			</div>
 			
 			<p> The attraction pages will be placed linearly in the hierarchy. The "Rent the park" page will be 
 placed as a subpage to the Ticket page. Other than that, the other pages will serve as independent pages.
