@@ -24,7 +24,7 @@
         <div class="container">
             <div class="col50" id="task1">
                 <h3><a href="http://tusenfryd.no">Tusenfryd</a></h3>
-                <ul id="list">
+                <ul class="list">
                     <li><h4>Title:</h4>
                     <p>The sites titles are set up in a way that distinguises the different pages on the website. It also easy to know the current page you are on, and within the Tusenfryd website. The way it's set up is with "Current page you are on | Tusenfryd". This is easy to read, and seems to us as a good and clean solution.</p>
                     </li>
@@ -57,7 +57,7 @@
             </div>
             <div class="col50" id="task2">
                 <h3><a href="http://skarneslekeland.no">Skarnes Lekeland</a></h3>  
-                <ul id="list">
+                <ul class="list">
                     <li><h4>Title:</h4>
                     <p>The start of the title field is decently set up for all the pages on the site. It's a description of the current page on the site. After that though, the title field has a very long description of the last news posted on the main page. This makes it a really long title, which really doesen't make any sense. A title describing the website, and the current page would be much more fitting, and easier to read.</p>                    
                     </li>
@@ -94,7 +94,7 @@
         <hr>
 		<div class="draft container" id="task3">
 			<h2>Project draft</h2>
-			<p> In this project, our plan is to design a website for a fictive theme park. The goal of the
+			<p> In this project, our plan is to design a website for a fictive theme park, called <i>Gløseberg</i>. The goal of the
 site, will be to show potential customers the attractions and event in the park, as well as system allowing 
 us to sell tickets online. We also want to include a map, and general information about the park, in a way 
 that's easily understandable by our customers.</p>
@@ -104,23 +104,28 @@ includes a picture, as well as information about the ride. There will also be a 
 information of the park, a map of the park, and a site map at the bottom of the web page. There will also be pages 
 for our restaurant, contact page and events happening at the park. We also need a ticket page, which will show 
 ticket prices and allow you to order tickets online. Lastly, we will have a page with information about 
-renting the park for parties, birthdays and so on. To sum up, these are the sites and their respective titles. </p>
-			
-			<ul class="draftlist" id="list">
+renting the park for parties, birthdays and so on. To sum up, these are the sites and their respective titles (see the list). </p>
+			<ul class="draftlist list">
 				<li> InsertParkName - Main page </li>
-				<li> InsertParkName - Attraction1 </li>
-				<li> InsertParkName - Attraction2  </li>
-				<li> InsertParkName - Attraction3  </li>
-				<li> InsertParkName - Attraction4  </li>
-				<li> InsertParkName - Attraction5  </li>
-				<li> InsertParkName - Attraction6  </li>
-				<li> InsertParkName - Contact Information </li>
+				<li> InsertParkName - Attractions 
+                    <ul>				
+                        <li> InsertParkName - Attraction1  </li>
+                        <li> InsertParkName - Attraction2  </li>
+                        <li> InsertParkName - Attraction3  </li>
+                        <li> InsertParkName - Attraction4  </li>
+                        <li> InsertParkName - Attraction5  </li>
+                        <li> InsertParkName - Attraction6  </li>
+                    </ul>
+                </li>
 				<li> InsertParkName - Restaurant </li>
 				<li> InsertParkName - Events </li>
-				<li> InsertParkName - Tickets </li>
-				<li> InsertParkName - Rent the park </li>
+				<li> InsertParkName - Tickets 
+                    <ul>
+				        <li> InsertParkName - Rent the park </li>
+                    </ul>
+                </li>
+				<li> InsertParkName - Contact Information </li>
 			</ul>
-			
 			<p> The attraction pages will be placed linearly in the hierarchy. The "Rent the park" page will be 
 placed as a subpage to the Ticket page. Other than that, the other pages will serve as independent pages.
 			<p> The site will mainly be targeted to families and young people. This will clearly influence 
@@ -134,11 +139,11 @@ There will also be implemented a map, to show where the park is located. This, a
 will allow people to easily locate the park. </p>
 			<p> The site will have a contact page, which will allow a visitor to fill inn a form, and 
 send a mail to us. We will also implement a slideshow on the main page, allowing the user to watch 
-pictures of the different attractions. MER DYNAMISKE FUNSKJONER PLOX I DNT KNOW</p>
+pictures of the different attractions. We hope to implement a weather widget showing the current weather in the park.</p>
 			<p> The pictures and other media content, will be randomly selected pictures of different theme 
-park rides. All of the code will be written by us, and we will avoid the use of frameworks, such as Bootstrap 
+park rides. All the multimedia content will be referenced and licensed by Creative Commons. All of the code will be written by us, and we will avoid the use of frameworks, such as Bootstrap 
 and Wordpress. Other than that, the text on the site will be written by us, and although this may take some 
-time, the main focus will be on the design and implementation.</p>
+time, the main focus will be on the design and implementation. We are also discussing the use of server frameworks, such as <a href="http://flask.pocoo.org">flask</a>, to be able to use HTML-templates.</p>
 			<p> From analyzing skarneslekeland.no and tusenfryd.no, we discovered just how many things to 
 consider when designing a website. It will be important to us to make sure we design a site that is available 
 for everyone. We also learned that many websites look good at a first glance, they could have been better 
@@ -148,7 +153,7 @@ which none of the pages really used. This could easily have made both the websit
 	<footer>
         <hr>
 		<div class="container">
-			<small>&copy; Håkon Ødegård Løvdal (haakool)<br></small>
+			<small>&copy; Group Gløseberg<br>Håkon Ødegård Løvdal (haakool)<br></small>
             <small>Fredrik Christoffer Berg (fredrcb)<br></small>
 			<small>Truls Mørk Pettersen (trulsmp)</small>
 		</div>
