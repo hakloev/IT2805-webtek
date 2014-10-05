@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="author" content="Håkon Ø. Løvdal, Fredrik C. Berg, Truls M. Pettersen ">
+	<title>Gløseberg</title>
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<div class="maincontainer">
+    # include header here
+    {% block body %}{% endblock %}
+    # include footer here
+</div>
+</body>
+</html>
