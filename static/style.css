@@ -90,3 +90,18 @@ nav ul li a:hover {
 nav ul li:hover {
     background-color: #fff;
 }
+
+ul ul {
+    display: none;
+}
+
+ul li:hover > ul {
+    display: block;
+    position: absolute;
+    width: auto;
+}
+
+ul ul li {
+    padding-top: 0;
+    border: 1px solid #45607c;
+}

@@ -9,25 +9,25 @@ def index():
 def attractions(attractionId):
     print("DEBUG: Attraction requested: %d" % (attractionId))
     if attractionId == 1:
-        return render_template("attractions/attraction1.html")
+        return render_template('attractions/attraction1.html')
     else:
         return "Can't find the attractionId %d" % (attractionId)
 
 @app.route("/restaurant")
 def restaurant():
-    return "Here will be restaurant html"
+    return render_template('restaurant.html')
 
 @app.route("/events")
 def events():    
-    return "Here will be events html"
+    return render_template('events.html')
 
 @app.route("/tickets")
 def tickets():
-    return "Here will be tickets html"
+    return render_template('tickets.html')
 
 @app.route("/contact")
 def contact():
-    return "Here will be contact html"
+    return render_template('contact.html')
 
 if __name__ == "__main__":
     app.run(host='127.0.0.1', 
