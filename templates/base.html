@@ -8,9 +8,11 @@
 </head>
 <body>
 <div class="maincontainer">
-    # include header here
-    {% block body %}{% endblock %}
-    # include footer here
+    {% include 'header.html' %}
+    {% block body %}
+            
+    {% endblock %}
+    {% include 'footer.html' %}
 </div>
 </body>
 </html>
