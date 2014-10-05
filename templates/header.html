@@ -2,7 +2,17 @@
     <h1 id="namebrand"><a href="{{ url_for('index') }}">Gløseberg</a></h1>
     <nav>
         <ul>
-            <li><a href="{{ url_for('attractions', attractionId='1') }}">Attraksjoner</a></li>
+            <li><a href="{{ url_for('attractions', attractionId='1') }}">Attraksjoner</a>
+                <ul>
+                    <li><a href="{{ url_for('attractions', attractionId='1') }}">A1</a></li>
+                    <li><a href="{{ url_for('attractions', attractionId='2') }}">A2</a></li>
+                    <li><a href="{{ url_for('attractions', attractionId='3') }}">A3</a></li>
+                    <li><a href="{{ url_for('attractions', attractionId='4') }}">A4</a></li>
+                    <li><a href="{{ url_for('attractions', attractionId='5') }}">A5</a></li>
+                    <li><a href="{{ url_for('attractions', attractionId='6') }}">A6</a></li>
+
+                </ul>
+            <li>
             <li><a href="{{ url_for('restaurant') }}">Restaurant</a></li>
             <li><a href="{{ url_for('events') }}">Arrangement</a></li>
             <li><a href="{{ url_for('tickets') }}">Billetter</a></li>
