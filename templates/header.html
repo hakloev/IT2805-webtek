@@ -1,3 +1,12 @@
 <header>
-    <h1>HEADER</h1>
+    <h1 id="namebrand"><a href="{{ url_for('index') }}">Gløseberg</a></h1>
+    <nav>
+        <ul>
+            <li><a href="{{ url_for('attractions', attractionId='1') }}">Attraksjoner</a></li>
+            <li><a href="{{ url_for('restaurant') }}">Restaurant</a></li>
+            <li><a href="{{ url_for('events') }}">Arrangement</a></li>
+            <li><a href="{{ url_for('tickets') }}">Billetter</a></li>
+            <li><a href="{{ url_for('contact') }}">Kontakt</a></li>
+        </ul>
+    </nav>
 </header>
