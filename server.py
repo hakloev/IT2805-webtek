@@ -1,5 +1,8 @@
-from flask import Flask, render_template, redirect, url_for
+import os
+from flask import Flask, render_template, flash, redirect, url_for
+
 app = Flask(__name__)
+app.secret_key = 'r\xe4@\x00\xa4\xf9\xe6.@S\x08/\xday\xf8\x9b\xfeR\xbe\x17\xfdK[\x90'
 
 @app.route("/")
 def index():
@@ -9,9 +12,11 @@ def index():
 def attractions(attractionId):
     print("DEBUG: Attraction requested: %d" % (attractionId))
     if attractionId == 1:
+        flash('You called for attraction %d' % (attractionId))
         return render_template('attractions/attraction1.html')
     else:
-        return "Can't find the attractionId %d" % (attractionId)
+        flash("Can't find the attractionId %d" % (attractionId))
+        return render_template('index.html')
 
 @app.route("/restaurant")
 def restaurant():
