@@ -16,7 +16,7 @@ a {
     color: #ff5c6f;  
 }
 
-p {
+p, label {
     font-family: "PT Sans Caption","Georgia", sans-serif;
 }
 
@@ -158,6 +158,16 @@ ul > li > ul > li {
     left: -10px;
 }
 
+/* Form stuff */
+
+#submit {
+    padding: 5px;
+    font-size: 14px;
+    border: 2px solid #ff5c6f;
+    background-color: #009636;
+    color: #fff;
+}
+
 /* Flash/Messages */
 
 .flash {
@@ -232,6 +242,13 @@ ul > li > ul > li {
     box-sizing: border-box;
 }
 
+.col50 {
+    float: left;
+    width: 50%;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
 .col66 {
     float: left;
     width: 66.664%;
@@ -239,9 +256,16 @@ ul > li > ul > li {
     box-sizing: border-box;
 }
 
-.col50 {
+.col80 {
     float: left;
-    width: 50%;
+    width: 80%;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.col100 {
+    float: left;
+    width: 100%;
     padding: 5px;
     box-sizing: border-box;
 }
