@@ -13,7 +13,7 @@ h1, h2, h3, h4, h5, h6, a  {
 
 a {
     text-decoration: none;
-    color: #fff;    
+    color: #ff5c6f;  
 }
 
 p {
@@ -129,16 +129,18 @@ nav ul li a {
     display: block;
     background-color: #009636;
     padding: 15px 10px 15px 10px;
+    color: #fff;
 }
 
 nav ul li a:hover {
-    color: #fff;
     background-color: #26a653;
 }
 
+/*
 nav ul li:hover {
     background-color: #fff;
 }
+*/
 
 ul > li > ul {
     display: none;
