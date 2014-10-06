@@ -8,10 +8,12 @@ app.secret_key = 'r\xe4@\x00\xa4\xf9\xe6.@S\x08/\xday\xf8\x9b\xfeR\xbe\x17\xfdK[
 def index():
     return render_template('index.html')
 
-@app.route("/attractions/<int:attractionId>")
-def attractions(attractionId):
-    print("DEBUG: Attraction requested: %d" % (attractionId))
-    if attractionId == 1:
+@app.route("/attractions/overview")
+@app.route("/attractions/id/<int:attractionId>")
+def attractions(attractionId=None):
+    if attractionId == None:
+        return render_template('attractions/overview.html')
+    elif attractionId == 1:
         flash('You called for attraction %d' % (attractionId))
         return render_template('attractions/attraction1.html')
     else:
@@ -36,5 +38,5 @@ def contact():
 
 if __name__ == "__main__":
     app.run(host='127.0.0.1', 
-            port=80, 
+            port=1337, 
             debug=True)
