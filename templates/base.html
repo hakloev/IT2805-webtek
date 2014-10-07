@@ -20,5 +20,8 @@
         </section>
         {% include 'footer.html' %}
     </div>
+    {% block scriptblock %}
+    <script src="{{ url_for('static', filename='js/front.js') }}"></script>
+    {% endblock %}
 </body>
 </html>
