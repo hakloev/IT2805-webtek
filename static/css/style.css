@@ -97,7 +97,7 @@ footer p a {
 }
 
 #namebrand {
-    background-image: url('/static/header.png');
+    background-image: url('/static/images/header.png');
     background-repeat: no-repeat;
     background-position: center;
 }
