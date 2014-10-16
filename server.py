@@ -22,19 +22,19 @@ def attractions(attractionId=None):
 
 @app.route("/restaurant")
 def restaurant():
-    return render_template('restaurant.html')
+    return render_template('subpages/restaurant.html')
 
 @app.route("/events")
 def events():    
-    return render_template('events.html')
+    return render_template('subpages/events.html')
 
 @app.route("/tickets")
 def tickets():
-    return render_template('tickets.html')
+    return render_template('subpages/tickets.html')
 
 @app.route("/contact")
 def contact():
-    return render_template('contact.html')
+    return render_template('subpages/contact.html')
 
 if __name__ == "__main__":
     app.run(host='0.0.0.0', 

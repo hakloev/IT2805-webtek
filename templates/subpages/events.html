@@ -1,4 +1,4 @@
-{% extends 'base.html' %}
+{% extends 'base/base.html' %}
 {% block title %}&ndash; Arrangement{% endblock %}
 {% block body %}
     <h2>Arrangementer</h2>
@@ -12,7 +12,7 @@
     		<img src="{{ url_for('static', filename='images/music.svg') }}" alt="Raveparty" width="70%">
 
     	</div>
-    	<p>
+        <div class="cf"></div>
    	</div>
    	<div class="row">
    		<div class="col33">
@@ -22,5 +22,7 @@
    		<div class="col33">
    			<h3> Mad rave party! </h3>
     		<p> Det blir insane rave party på Gløseberg om en uke. Alle djgutta kommer, dette kommer til å bli knallbra!</p>
-   		</div>
+        </div>
+        <div class="cf"></div>
+    </div>
 {% endblock %}

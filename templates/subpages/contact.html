@@ -1,4 +1,4 @@
-{% extends 'base.html' %}
+{% extends 'base/base.html' %}
 {% block title %}&ndash; Kontakt oss{% endblock %}
 {% block body %}
     <h2>KONTAKT OSS</h2>
@@ -11,11 +11,12 @@
                 Norge 
             </address>
         </div>
+        <div class="cf"></div>
     </div>
     <section>
         <h3>Kontaktskjema:</h3>
         <div class="row">
-            <div class="col50 cf">
+            <div class="col50">
                 <form action="#" method="POST">
                     <div class="row">
                         <div class="col33">
@@ -24,6 +25,7 @@
                         <div class="col66">
                             <input type="text" id="name" name="name" size="30" maxlength="50" placeholder="Navn Navnesen" required="Du må skrive inn navn" />
                         </div>
+                        <div class="cf"></div>
                     </div>
                     <div class="row">
                         <div class="col33">
@@ -32,6 +34,7 @@
                         <div class="col66">
                             <input type="email" id="email" name="email" size="30" placeholder="me@domain.com" required="Du må skrive inn epostadresse" />
                         </div>
+                        <div class="cf"></div>
                     </div>
                     <div class="row">
                         <div class="col33">
@@ -40,17 +43,20 @@
                         <div class="col66">
                             <textarea id="comment" name="comment" cols="28" rows="5" placeholder="Skriv din kommentar her" optional></textarea>
                         </div>
+                        <div class="cf"></div>
                     </div>
                     <div class="row">
                         <div class="col100">
                             <input type="submit" id="submit" value="Send"/>
                         </div>
+                        <div class="cf"></div>
                     </div>
                 </form>
             </div>
-            <div class="col50 cf">
+            <div class="col50">
                 <p>Har du noe du ønsker å si? Send inn en melding med dette kontaktskjema, så er jeg sikker på at bergalerga kommer på døra di med minst 15 torpedoer!</p>
             </div>
+            <div class="cf"></div>
         </div>
     </section>
 {% endblock %}

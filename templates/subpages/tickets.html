@@ -1,0 +1,49 @@
+{% extends 'base/base.html' %}
+{% block title %}&ndash; Billetter{% endblock %}
+{% block body %}
+    <h1>Billettinformasjon</h1>
+    <p> Her kan du bestille billetter til gløseberg! Billettene koster 100 kr per stykk, og en bekreftelse vil sendes på epost etter at bestillingen er mottatt. Venligst legg pengene i diskettstasjonen før du bekrefter bestillingen.</p>
+    
+    <h3>Bestillingsskjema</h3>
+    <form action="#" method="POST">
+        <div class="row">
+            <div class="col33">
+                <label for="name">Navn:</label>
+            </div>
+            <div class="col66">
+                <input type="text" id="name" name="name" size="30" maxlength="50" placeholder="Navn Navnesen" required="Du må skrive inn navn" />
+            </div>
+            <div class="cf"></div>
+        </div>
+        <div class="row">
+            <div class="col33">
+                <label for="email">Epost:</label>
+            </div>
+            <div class="col66">
+                <input type="email" id="email" name="email" size="30" placeholder="ola@nordmann.no" required="Du må skrive inn epostadresse" />
+            </div>
+            <div class="cf"></div>
+        </div>
+        <div class="row">
+            <div class="col33">
+                <label for="antallBilletter">Velg antall billetter:</label>
+            </div>
+            <div class="col66">
+                <select id="antallBilletter" name="antallBilletter" required="Du må velge et antall">
+                    <option value="1"> 1 </option>
+                    <option value="2"> 2 </option>
+                    <option value="3"> 3 </option>
+                    <option value="4"> 4 </option>
+                    <option value="5"> 5 </option>
+                </select>
+            </div>
+            <div class="cf"></div>
+        </div>
+        <div class="row">
+            <div class="col100">
+                <input type="submit" id="submit" value="Send"/>
+            </div>
+            <div class="cf"></div>
+        </div>
+    </form>
+{% endblock %}

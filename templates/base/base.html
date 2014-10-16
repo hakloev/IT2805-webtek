@@ -10,7 +10,7 @@
 </head>
 <body>
     <div id="wrapper">
-        {% include 'header.html' %}
+        {% include 'base/header.html' %}
         <section id="mainsection">
             {% for message in get_flashed_messages() %}
             <div class="flash">{{ message }}</div>
@@ -18,7 +18,7 @@
             {% block body %}
             {% endblock %}
         </section>
-        {% include 'footer.html' %}
+        {% include 'base/footer.html' %}
     </div>
     {% block scriptblock %}
     <script src="{{ url_for('static', filename='js/front.js') }}"></script>
