@@ -29,13 +29,22 @@
                 <label for="antallBilletter">Velg antall billetter:</label>
             </div>
             <div class="col66">
-                <select id="antallBilletter" name="antallBilletter" required="Du må velge et antall">
+                <select id="antallBilletter" onChange="update()" name="antallBilletter" required="Du må velge et antall">
                     <option value="1"> 1 </option>
                     <option value="2"> 2 </option>
                     <option value="3"> 3 </option>
                     <option value="4"> 4 </option>
                     <option value="5"> 5 </option>
                 </select>
+            </div>
+            <div class="cf"></div>
+        </div>
+        <div id="row">
+            <div class="col33">
+                <label for="pris"> Pris </label>
+            </div>
+            <div class="col66">
+                <output id="pris"> 0 </output>
             </div>
             <div class="cf"></div>
         </div>
@@ -46,4 +55,11 @@
             <div class="cf"></div>
         </div>
     </form>
+    <script>
+        window.update = function() {
+            var antall = document.getElementById('antallBilletter').value;
+            document.getElementById('pris').value = antall*100;
+            
+        }
+    </script>
 {% endblock %}
