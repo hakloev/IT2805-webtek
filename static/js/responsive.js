@@ -3,13 +3,13 @@ var responsive = (function () {
     mobile.className = 'nav-mobile';
     document.querySelector('.nav').appendChild(mobile);   
 
-    var hasClass = function(element, className) {
+    var childClasses = function(element, className) {
         return new RegExp(' ' + className + ' ').test(' ' + element.className + ' ');
     }
 
-    var toggleClass = function(element, className) {
+    var setClass = function(element, className) {
         var newClass = ' ' + element.className.replace(/[\t\r\n]/g, '') + ' ';
-        if (hasClass(element, className)) {
+        if (childClasses(element, className)) {
             while (newClass.indexOf(' ' + className + ' ') >= 0) {
                 newClass = newClass.replace(' ' + className + ' ', ' ');
             }
@@ -22,8 +22,8 @@ var responsive = (function () {
     var mobileNav = document.querySelector('.nav-mobile');
     var toggle = document.querySelector('.nav-list');
     mobileNav.addEventListener('click', function() {
-        toggleClass(this, 'nav-mobile-open');
-        toggleClass(toggle, 'nav-active');
+        setClass(this, 'nav-mobile-open');
+        setClass(toggle, 'nav-active');
     });
 
 })();
