@@ -301,7 +301,8 @@ and (max-device-width: 480px) {
     #namebrand {
         display:none;
     }
-    header {
+    html {
+        font-size: 160%;
     }
     #wrapper {
         width: 100%;
