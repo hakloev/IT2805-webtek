@@ -3,7 +3,9 @@ GLOSEBERG
 
 ### Setup
 
-The site is hosted at [woz.no](http://gloseberg.woz.no). If you want to setup your own local version you need to install [flask](http://flask.pocoo.org) on your computer/server. Since the site is implemented using flask, you need to run the command:
+The site is hosted at [woz.no](http://gloseberg.woz.no) (or [folk.ntnu.no](http://folk.ntnu.no/haakool), but it's only a redirect to woz.no, by adding a .htaccess file in the public_html folder).
+
+If you want to setup your own local version you need to install [flask](http://flask.pocoo.org) on your computer/server. Since the site is implemented using flask, you need to run the command:
 
 ```bash
 pip3 install Flask
