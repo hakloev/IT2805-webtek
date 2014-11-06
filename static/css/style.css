@@ -274,7 +274,7 @@ ul li:hover > ul {
 
 /* Media queries */
 
-@media (max-width: 1000px) {
+@media (min-width: 640px) and (max-width: 1000px) {
     #namebrand {
         line-height: 100px;
         height: 100px;
@@ -295,7 +295,9 @@ ul li:hover > ul {
     }
 }
 
-@media (max-width: 639px) {
+@media (max-width: 640px), only screen 
+and (min-device-width: 320px) 
+and (max-device-width: 480px) {
     #namebrand {
         display:none;
     }
