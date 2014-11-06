@@ -10,15 +10,17 @@
 </head>
 <body>
     <div id="wrapper">
-        {% include 'base/header.html' %}
-        <section id="mainsection">
-            {% for message in get_flashed_messages() %}
-            <div class="flash">{{ message }}</div>
-            {% endfor %}
-            {% block body %}
-            {% endblock %}
-        </section>
-        {% include 'base/footer.html' %}
+        <div id="main">
+            {% include 'base/header.html' %}
+            <section id="mainsection">
+                {% for message in get_flashed_messages() %}
+                <div class="flash">{{ message }}</div>
+                {% endfor %}
+                {% block body %}
+                {% endblock %}
+            </section>
+            {% include 'base/footer.html' %}
+        </div>
     </div>
     {% block scriptblock %}
     <script src="{{ url_for('static', filename='js/front.js') }}"></script>

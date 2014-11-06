@@ -106,41 +106,48 @@ footer p a {
     color: #ff5c6f;
 }
 
-nav {
+.nav {
     height: 52px;
     text-align: center;
 }
 
-nav ul {
+.nav-list {
     display: inline-block;
     list-style-type: none;
     margin: 0;
     padding: 0 0 0 10px;
 }
 
-nav ul li {
+.nav-list > li {
     float: left;
     position: relative;
     background-color: #45607c;
 }
 
-nav ul li a {
-    text-transform: uppercase;
-    display: block;
-    background-color: #009636;
-    padding: 15px 10px 15px 10px;
-    color: #fff;
-}
-
-nav ul li a:hover {
+.nav-list > li > a:hover {
     background-color: #26a653;
 }
 
-/*
-nav ul li:hover {
-    background-color: #fff;
+.nav-list > li > a {
+    text-transform: uppercase;
+    display: block;
+    background-color: #009636;
+    padding: 5px 10px 5px 10px;
+    line-height: 42px;
+    color: #fff;
 }
-*/
+
+.nav-list-attractions > li > a {
+    text-transform: uppercase;
+    display: block;
+    background-color: #009636;
+    padding: 8px 10px 8px 10px;
+    color: #fff;
+}
+
+.nav-list-attractions > li > a:hover {
+    background-color: #26a653;
+}
 
 ul > li > ul {
     display: none;
@@ -150,12 +157,30 @@ ul li:hover > ul {
     display: block;
     position: absolute;
     width: 100%;
+    padding-left: 0;
+    list-style-type:none;
 }
 
-ul > li > ul > li {
+.nav-list-attractions > li {
     float:none;
     padding-bottom: 0;
+    margin: 0;
     left: -10px;
+}
+
+.nav-mobile {
+    display:none;
+    cursor:pointer;
+    position:absolute;
+    top:0;
+    right: 0;
+    float:right;
+    background:#ff5c6f url('/static/images/nav.svg') no-repeat center center;
+    height:56px;
+    width:56px;
+    border-radius:5px;
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
 }
 
 /* Form stuff */
@@ -249,7 +274,7 @@ ul > li > ul > li {
 
 /* Media queries */
 
-@media all and (max-width: 1000px) and (min-width: 569px) {
+@media all and (max-width: 1000px) and (min-width: 640px) {
     #namebrand {
         line-height: 100px;
         height: 100px;
@@ -258,36 +283,62 @@ ul > li > ul > li {
     #wrapper {
         width: 100%;
     }
-    nav {
-        height: 33px;
+    .nav {
+        height: 52px;
     }
-    nav ul li a {
-        font-size: 14px;
-        padding: 7px;
+    .nav-list > li > a {
     }
-    nav ul li {
+    .nav-list > li {
     }
     footer h4 {
         font-size: 10px;
     }
 }
 
-@media all and (max-width: 568px) and (min-width: 320px) {
+@media all and (max-width: 639px) and (min-width: 320px) {
     #namebrand {
-        line-height: 75px;
-        height: 75px;
-        font-size: 40px;
+        display:none;
+    }
+    header {
     }
     #wrapper {
         width: 100%;
+        position:relative;
     }
-    nav {
-        height: 30px;
+    .nav {
+        width: 100%;
+        position: relative;
+        display:inline-block;
     }
-    nav ul li a {
-         font-size: 14px;
-         padding: 5px;
-    }    
+    .nav-list {
+        display:none;
+        padding: 0;
+    }
+    .nav-list > li {
+        float:none;
+    }
+    .nav-item {
+        width: 100%;
+        float: none;
+    }
+    ul li:hover > ul {
+        display:none;
+    }
+    .nav-mobile {
+        display:block;
+    }
+    .nav-active {
+        display:block;
+        padding-top: 52px;
+    }
+    .nav-active > li > a {
+        background-color: #ff5c6f;
+    }
+    .nav-mobile-open {
+        border-radius:5px 5px 0 0;
+        -webkit-border-radius:5px 5px 0 0;
+        -moz-border-radius:5px 5px 0 0;
+    }
     footer h4 {
         font-size: 8px;
     }

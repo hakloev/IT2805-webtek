@@ -1,22 +1,22 @@
 <header>
     <h1 id="namebrand"><a href="{{ url_for('index') }}">Gløseberg</a></h1>
-    <nav>
-        <ul>
-            <li><a href="{{ url_for('attractions') }}">Attraksjoner</a>
-                <ul>
-                    <li><a href="{{ url_for('attractions', attractionId='1') }}">Rider</a></li>
-                    <li><a href="{{ url_for('attractions', attractionId='2') }}">Sklia</a></li>
-                    <li><a href="{{ url_for('attractions', attractionId='3') }}">Ghostville</a></li>
-                    <li><a href="{{ url_for('attractions', attractionId='4') }}">Svinghuska</a></li>
-                    <li><a href="{{ url_for('attractions', attractionId='5') }}">Barnesklia</a></li>
-                    <li><a href="{{ url_for('attractions', attractionId='6') }}">Lightning</a></li>
+    <nav class="nav">
+        <ul class="nav-list">
+            <li class="nav-item"><a href="{{ url_for('attractions') }}">Attraksjoner</a>
+                <ul class="nav-list-attractions">
+                    <li class="nav-item"><a href="{{ url_for('attractions', attractionId='1') }}">Rider</a></li>
+                    <li class="nav-item"><a href="{{ url_for('attractions', attractionId='2') }}">Sklia</a></li>
+                    <li class="nav-item"><a href="{{ url_for('attractions', attractionId='3') }}">Ghostville</a></li>
+                    <li class="nav-item"><a href="{{ url_for('attractions', attractionId='4') }}">Svinghuska</a></li>
+                    <li class="nav-item"><a href="{{ url_for('attractions', attractionId='5') }}">Barnesklia</a></li>
+                    <li class="nav-item"><a href="{{ url_for('attractions', attractionId='6') }}">Lightning</a></li>
 
                 </ul>
-            <li>
-            <li><a href="{{ url_for('restaurant') }}">Restaurant</a></li>
-            <li><a href="{{ url_for('events') }}">Arrangement</a></li>
-            <li><a href="{{ url_for('tickets') }}">Billetter</a></li>
-            <li><a href="{{ url_for('contact') }}">Kontakt</a></li>
+            </li>
+            <li class="nav-item"><a href="{{ url_for('restaurant') }}">Restaurant</a></li>
+            <li class="nav-item"><a href="{{ url_for('events') }}">Arrangement</a></li>
+            <li class="nav-item"><a href="{{ url_for('tickets') }}">Billetter</a></li>
+            <li class="nav-item"><a href="{{ url_for('contact') }}">Kontakt</a></li>
         </ul>
     </nav>
 </header>
