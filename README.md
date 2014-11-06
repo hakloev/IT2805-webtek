@@ -1,6 +1,12 @@
 GLOSEBERG
 =========
 
+### Group members
+
+* Fredrik Christoffer Berg
+* Truls Mørk Pettersen
+* Håkon Ødegård Løvdal
+
 ### Setup
 
 The site is hosted at [woz.no](http://gloseberg.woz.no). If you want to setup your own local version you need to install [flask](http://flask.pocoo.org) on your computer/server. Since the site is implemented using flask, you need to run the command:
@@ -36,3 +42,5 @@ We have used the following technologies to implement our project:
 * CSS3
 * JavaScript
 * Flask (based on Werkzeug and Jinja 2)
+
+TODO: Documenting which technologies have been used and why (for what purpose). 
