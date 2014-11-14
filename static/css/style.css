@@ -225,13 +225,16 @@ ul li:hover > ul {
 /* Flash/Messages */
 
 .flash {
-    background: #f39c12;
+    background: rgba(243, 138, 18, 0.89);
     color: #fff;
-    margin: 10px 30px 10px 30px;
+    margin: 30px;
     padding: 10px 0 10px 20px;
     font-size: 15px;
     text-transform: uppercase;
     font-weight: bold;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
 }
 
 /* Grid system 

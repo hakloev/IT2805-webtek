@@ -2,24 +2,19 @@
 {% block title %}&ndash; Billetter{% endblock %}
 {% block body %}
     <h1>Billettinformasjon</h1>
-    <p> Her kan du bestille billetter til gløseberg! Billettene koster 100 kr per stykk, og en bekreftelse vil sendes på epost etter at bestillingen er mottatt. Vennligst legg pengene i diskettstasjonen før du bekrefter bestillingen.</p>
-    
+    <p> Her kan du bestille billetter til gløseberg! Billettene koster 100 kr per stykk, og en bekreftelse vil sendes på epost etter at bestillingen er mottatt. Vennligst legg pengene i diskettstasjonen før du bekrefter bestillingen.</p>    
     <h3>Bestillingsskjema</h3>
     <form action="#" method="POST">
         <div class="section cf">
             <div class="col col33">
                 <label for="name">Navn:</label>
-            </div>
-            <div class="col col66">
-                <input type="text" id="name" name="name" size="30" maxlength="50" placeholder="Navn Navnesen" required="Du må skrive inn navn" />
+                <input type="text" class="textbox" id="name" name="name" size="30" maxlength="50" placeholder="Navn Navnesen" required="Du må skrive inn navn" />
             </div>
         </div>
         <div class="section cf">
             <div class="col col33">
                 <label for="email">Epost:</label>
-            </div>
-            <div class="col col66">
-                <input type="email" id="email" name="email" size="30" placeholder="ola@nordmann.no" required="Du må skrive inn epostadresse" />
+                <input type="email" class="textbox" id="email" name="email" size="30" placeholder="ola@nordmann.no" required="Du må skrive inn epostadresse" />
             </div>
         </div>
         <div class="section cf">
@@ -38,9 +33,9 @@
         </div>
         <div class="section cf">
             <div class="col col33">
-                <label for="pris"> Pris </label>
+                <label for="pris" > Pris </label>
             </div>
-            <div class="col col66">
+            <div class="col col33">
                 <output id="pris"> 100 </output>
             </div>
         </div>
