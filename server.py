@@ -9,15 +9,23 @@ def index():
     return render_template('index.html')
 
 @app.route("/attractions/overview")
-@app.route("/attractions/id/<int:attractionId>")
+@app.route("/attractions/id/<string:attractionId>")
 def attractions(attractionId=None):
+    attractions = {
+            '1' : 'attraction1.html',
+            '2' : 'attraction2.html',
+            '3' : 'attraction3.html',
+            '4' : 'attraction4.html',
+            '5' : 'attraction5.html',
+            '6' : 'attraction6.html'
+    }
     if attractionId == None:
         return render_template('attractions/overview.html')
-    elif attractionId == 1:
-        flash('You called for attraction %d' % (attractionId))
-        return render_template('attractions/attraction1.html')
+    elif attractionId in attractions.keys():
+        flash('You called for attraction %s' % (attractionId))
+        return render_template('attractions/%s' % (attractions[attractionId]))
     else:
-        flash("Can't find the attractionId %d" % (attractionId))
+        flash("Can't find the attractionId %s" % (attractionId))
         return render_template('index.html')
 
 @app.route("/restaurant")
