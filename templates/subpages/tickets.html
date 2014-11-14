@@ -2,7 +2,7 @@
 {% block title %}&ndash; Billetter{% endblock %}
 {% block body %}
     <h1>Billettinformasjon</h1>
-    <p> Her kan du bestille billetter til gløseberg! Billettene koster 100 kr per stykk, og en bekreftelse vil sendes på epost etter at bestillingen er mottatt. Venligst legg pengene i diskettstasjonen før du bekrefter bestillingen.</p>
+    <p> Her kan du bestille billetter til gløseberg! Billettene koster 100 kr per stykk, og en bekreftelse vil sendes på epost etter at bestillingen er mottatt. Vennligst legg pengene i diskettstasjonen før du bekrefter bestillingen.</p>
     
     <h3>Bestillingsskjema</h3>
     <form action="#" method="POST">
@@ -36,7 +36,7 @@
                 </select>
             </div>
         </div>
-        <div id="section cf">
+        <div class="section cf">
             <div class="col col33">
                 <label for="pris"> Pris </label>
             </div>
@@ -46,7 +46,7 @@
         </div>
         <div class="section cf">
             <div class="col col100">
-                <input type="submit" id="submit" value="Send"/>
+                <input type="submit" id="submit" value="Send" onclick="alert('Din diskettstasjon er tom, prøv på nytt')"/>
             </div>
         </div>
     </form>

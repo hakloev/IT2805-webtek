@@ -26,6 +26,14 @@ p, label {
     font-family: "PT Sans Caption","Georgia", sans-serif;
 }
 
+label {
+    display: block;
+}
+
+input, textarea {
+    margin: 10px 0;
+}
+
 #wrapper {
     background: #fff;
     min-height: 100%;
@@ -37,14 +45,32 @@ p, label {
     box-shadow: 0px 0px 5px 0px rgba(0,0,0,1);
 }
 
+.container {
+    margin: 0 30px;
+}
+
 header {
     background: #009636;
 }
 
 
 #mainsection {
-    padding: 10px;
-    padding-bottom: 200px; /* Height of the footer */    
+    padding-bottom: 200px; /* Height of the footer */
+}
+
+.textbox {
+    background: white;
+    border: 1px double #DDD;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-box-shadow: 0 0 5px #333;
+    -moz-box-shadow: 0 0 5px #333;
+    box-shadow: 0 0 5px #333;
+    color: #666;
+    outline: none;
+    height: 25px;
+    width: 275px;
 }
 
 footer {
@@ -81,14 +107,6 @@ footer p a {
 }
 
 /* Navbar stuff */
-
-/*#namebrand {
-    float: left;
-    line-height: 54px;
-    margin: auto;
-    vertical-align: middle;
-    padding: 0 20px 0 20px;
-}*/
 
 #namebrand {
     text-align: center;
@@ -197,6 +215,11 @@ ul li:hover > ul {
     border: 2px solid #ff5c6f;
     background-color: #009636;
     color: #fff;
+    float: right;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+
 }
 
 /* Flash/Messages */
