@@ -11,17 +11,15 @@
 </head>
 <body>
     <div id="wrapper">
-        <div id="main">
-            {% include 'base/header.html' %}
-            <section id="mainsection">
-                {% for message in get_flashed_messages() %}
-                <div class="flash">{{ message }}</div>
-                {% endfor %}
-                {% block body %}
-                {% endblock %}
-            </section>
-            <!--{% include 'base/footer.html' %}> -->
-        </div>
+        {% include 'base/header.html' %}
+        <section id="mainsection" class="container">
+            {% for message in get_flashed_messages() %}
+            <div class="flash">{{ message }}</div>
+            {% endfor %}
+            {% block body %}
+            {% endblock %}
+        </section>
+        {% include 'base/footer.html' %} 
     </div>
     {% block scriptblock %}
         <script src="{{ url_for('static', filename='js/responsive.js') }}"></script>
