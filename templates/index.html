@@ -13,10 +13,13 @@ orskldfjsdalkg;dsgsdglkdsagjkldsagsdaklg;sdg;sdklgjdsalkgksdagsd
 orskldfjsdalkg;dsgsdglkdsagjkldsagsdaklg;sdg;sdklgjdsalkgksdags</p>
         </div>
         <div class="col66">
-            <p>dgklasdgjasdl;gjdasklgdjsagkladsgjkdsagkljdsajgdsakl;gadjksgjklsakljasdgl;sda
-hgsadg
-dsag</p>
+            <p><img src="{{ url_for('static', filename='images/rides/sklia.JPG') }}" width="400" height="400" name="slide"/></p>
+            <p id="imagename"></p>
+
         </div>
         <div class="cf"></div>
     </div>
+{% endblock %}
+{% block scriptblock %}
+    <script src="{{ url_for('static', filename='js/slideshow.js') }}"> </script>
 {% endblock %}
