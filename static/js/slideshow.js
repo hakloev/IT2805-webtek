@@ -25,9 +25,9 @@ var slideshow = function () {
         step++;
     }
     else{
-        step=1
+        step=1;
     }
-    setTimeout("slideshow()",2500);
+    setTimeout("slideshow()",5000);
 
 };
 
