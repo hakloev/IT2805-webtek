@@ -372,3 +372,12 @@ and (max-device-width: 480px) {
         width: 100% /* sketchy, need fix */
     }
 }
+
+#slideshow {
+    text-align: center;
+}
+
+#imagename {
+    text-align: center;
+    margin-top: 3px;
+}

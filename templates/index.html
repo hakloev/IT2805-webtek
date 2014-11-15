@@ -3,11 +3,22 @@
 {% block body %}
     <h1>HERE BE MAINSECTION FOR INDEX PAGE</h1>
     <div class="section cf">
-        <div class="col col33">
-            <p>lorem derp derp a herpdsdddddddddddddddd d d d  d d d dd dsfdslfdsjdsl dsl; dsdsgdslgjdslk;gjdsgkls</p>
+        <div class="col50">
+            <p>lorskldfjsdalkg;dsgsdglkdsagjkldsagsdaklg;sdg;sdklgjdsalkgksdagsdlllllllorskldfjsdalkg;dsgsdglkdsagjkldsagsdaklg;sdg;sdklgjdsalkgksdagsd
+orskldfjsdalkg;dsgsdglkdsagjkldsagsdaklg;sdg;sdklgjdsalkgksdagsd
+orskldfjsdalkg;dsgsdglkdsagjkldsagsdaklg;sdg;sdklgjdsalkgksdagsd
+orskldfjsdalkg;dsgsdglkdsagjkldsagsdaklg;sdg;sdklgjdsalkgksdagsd
+orskldfjsdalkg;dsgsdglkdsagjkldsagsdaklg;sdg;sdklgjdsalkgksdagsd
+orskldfjsdalkg;dsgsdglkdsagjkldsagsdaklg;sdg;sdklgjdsalkgksdagsd
+orskldfjsdalkg;dsgsdglkdsagjkldsagsdaklg;sdg;sdklgjdsalkgksdags</p>
         </div>
-        <div class="col col66">
-            <p>Col dero herp asfasfasfdsf dsg as sdds sdga ga dsg dsg dsga dasg dgsa dgs  gs erhtr y u jur ht g fgd fg gf dr fgd fda dfas f re gdf fd f fgs fsd addf asfd df gfd  agdfa ds gdfadfh</p>
+        <div class="col50" id="slideshow">
+            <img src="{{ url_for('static', filename='images/rides/sklia.JPG') }}" width="400" height="400" name="slide"/>
+            <h4 id="imagename"></h4>
+
         </div>
     </div>
+{% endblock %}
+{% block scriptblock %}
+    <script src="{{ url_for('static', filename='js/slideshow.js') }}"> </script>
 {% endblock %}
