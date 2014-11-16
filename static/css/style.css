@@ -382,10 +382,6 @@ and (max-device-width: 480px) {
     margin-bottom: 3px;
 }
 
-p {
-    overflow: hidden;
-}
-
 .attraction {
     text-align: center;
 }
