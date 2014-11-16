@@ -22,10 +22,8 @@ def attractions(attractionId=None):
     if attractionId == None:
         return render_template('attractions/overview.html')
     elif attractionId in attractions.keys():
-        flash('You called for attraction %s' % (attractionId))
         return render_template('attractions/%s' % (attractions[attractionId]))
     else:
-        flash("Can't find the attractionId %s" % (attractionId))
         return render_template('index.html')
 
 @app.route("/restaurant")

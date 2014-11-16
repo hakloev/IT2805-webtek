@@ -1,7 +1,9 @@
 {% extends 'base/base.html' %}
 {% block title %}&ndash; Attraksjoner &ndash; 1{% endblock %}
 {% block body %}
-<h1>Attraction 1</h1>
-<img src="{{ url_for('static', filename='images/rides/ghostville.JPG') }}" name="Rider"/>
+<div class="attraction">
+<h1>Ghostville</h1>
+<img src="{{ url_for('static', filename='images/rides/ghostville.JPG') }}" alt="Ghostville"  width="400" height="400"/>
 <p> This is the awesome rider, your mind will be blown to bits by this awesome ride</p>
+</div>
 {% endblock %}

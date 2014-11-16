@@ -373,15 +373,19 @@ and (max-device-width: 480px) {
     }
 }
 
-#slideshow {
+.centering {
     text-align: center;
 }
 
-#imagename {
+.imagename {
     text-align: center;
-    margin-top: 3px;
+    margin-bottom: 3px;
 }
 
 p {
     overflow: hidden;
+}
+
+.attraction {
+    text-align: center;
 }

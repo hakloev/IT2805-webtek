@@ -2,4 +2,45 @@
 {% block title %}&ndash; Attraksjoner &ndash; Oversikt{% endblock %}
 {% block body %}
     <h1>Attraksjonsoversikt</h1>
+<div class="section cf">
+    <div class="col col33 centering">
+        <h4 class="imagename">Rider</h4>
+        <a href="{{ url_for('attractions', attractionId='1') }}">
+            <img src="{{ url_for('static', filename='images/rides/ghostville.JPG') }}" alt="Rider" width="250" height="250"/>
+        </a>
+    </div>
+    <div class="col col33 centering">
+        <h4 class="imagename">Sklia</h4>
+        <a href="{{ url_for('attractions', attractionId='2') }}">
+            <img src="{{ url_for('static', filename='images/rides/sklia.JPG') }}" alt="Sklia" width="250" height="250"/>
+        </a>
+    </div>
+    <div class="col col33 centering">
+        <h4 class="imagename">Ghostville</h4>
+        <a href="{{ url_for('attractions', attractionId='3') }}">
+            <img src="{{ url_for('static', filename='images/rides/ghostville.JPG') }}" alt="Ghostville" width="250" height="250"/>
+        </a>
+    </div>
+</div>
+<div class="section cf">
+    <div class="col col33 centering">
+        <h4 class="imagename">Svinghuska</h4>
+        <a href="{{ url_for('attractions', attractionId='4') }}">
+            <img src="{{ url_for('static', filename='images/rides/svinghuska.JPG') }}" alt="Svinghuska" width="250" height="250"/>
+        </a>
+    </div>
+    <div class="col col33 centering">
+        <h4 class="imagename">Barnesklia</h4>
+        <a href="{{ url_for('attractions', attractionId='5') }}">
+            <img src="{{ url_for('static', filename='images/rides/sklia.JPG') }}" alt="Barnesklia" width="250" height="250"/>
+        </a>
+    </div>
+    <div class="col col33 centering">
+        <h4 class="imagename">Lightning</h4>
+        <a href="{{ url_for('attractions', attractionId='6') }}">
+            <img src="{{ url_for('static', filename='images/rides/lightning.JPG') }}" alt="Lightning" width="250" height="250"/>
+        </a>
+    </div>
+</div>
+
 {% endblock %}
