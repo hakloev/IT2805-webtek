@@ -1,8 +1,20 @@
 <footer>
     <div class="container">
         <div class="section cf">
-            <div class="col col100">
-                <h4><a href="#">Kontakt</a></h4>
+            <div class="col col20">
+                <h4><a href="{{ url_for('attractions') }}">Attraksjoner</a></h4>
+            </div>
+            <div class="col col20">
+                <h4><a href="{{ url_for('restaurant') }}">Restaurant</a></h4>
+            </div>
+            <div class="col col20">
+                <h4><a href="{{ url_for('events') }}">Arrangement</a></h4>
+            </div>
+            <div class="col col20">
+                <h4><a href="{{ url_for('tickets') }}">Billetter</a></h4>
+            </div>
+            <div class="col col20">
+                <h4><a href="{{ url_for('contact') }}">Kontakt</a></h4>
             </div>
         </div>
     </div>
