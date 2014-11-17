@@ -1,15 +1,13 @@
 {% extends 'base/base.html' %}
 {% block title %}&ndash; Hovedsiden{% endblock %}
 {% block body %}
-    <h1>Velkommen til Gløseberg!</h1>
     <div class="section cf">
         <div class="col col50">
+            <h1 id="mainh1">Velkommen til Gløseberg!</h1>
             <p>Crucian carp elver golden trout devil ray aruana bluegill squarehead catfish algae eater platyfish. Threadfin bream threadfin bream butterfly ray vimba elephantnose fish clownfish North Pacific daggertooth northern pike. Livebearer catfish stingray Dolly Varden trout warty angler lemon sole banjo catfish goldfish. Boga golden dojo pearleye spiderfish, opah sunfish, longnose whiptail catfish arrowtooth eel bream: Spanish mackerel eelpout, cat shark unicorn fish. Black swallower chimaera, noodlefish yellow perch: bamboo shark, rock bass triplefin blenny, frogmouth catfish opah sunfish lightfish. Swordtail french angelfish pikeperch Sacramento splittail oarfish, northern anchovy catalufa pikeperch tiger barb elephant fish, whale shark.</p>
         </div>
-        <div class="col col50 centering">
+        <div class="col col50" id="slideshowcontainer">
             <h4 class="imagename" id="imagename"></h4>
-            <img src="{{ url_for('static', filename='images/rides/sklia.JPG') }}" width="400" height="400" name="slide"/>
-
         </div>
     </div>
 {% endblock %}
