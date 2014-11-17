@@ -313,6 +313,10 @@ footer p a {
  * (column layout)
  * */
 
+.pull-left {
+    float: left !important;
+}
+
 .pull-right {
     float: right !important;
 }

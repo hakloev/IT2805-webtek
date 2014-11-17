@@ -6,4 +6,9 @@
     <img src="{{ url_for('static', filename='images/rides/svinghuska.JPG') }}" alt="Svinghuska"  width="400" height="400"/>
     <p> Liker du å bli svimmel? Elsker du å kaste opp? Da er svinghuska perfekt for deg! Her blir du svingt rundt i en fantastisk og kvalmende fart, alltid morsomt for både liten og stor.</p>
 </div>
+<div class="linearnav">
+    <a href="{{ url_for('attractions', attractionId=3) }}" class="pull-left">Ghostville</a>
+    <a href="{{ url_for('attractions', attractionId=5) }}" class="pull-right">Barnesklia</a>
+</div>
+
 {% endblock %}

@@ -6,4 +6,8 @@
 <img src="{{ url_for('static', filename='images/rides/sklia.JPG') }}" alt="Sklia"  width="400" height="400"/>
 <p> Dette er sklia, den er ganske kul. Selv om det ikke er det sjukeste vi har å tilby på Gløsberg, så måtte vi ha det med grunnet noe HMS greier. Sånn er det bare...</p>
 </div>
+<div class="linearnav">
+    <a href="{{ url_for('attractions', attractionId=1) }}" class="pull-left">Rider</a>
+    <a href="{{ url_for('attractions', attractionId=3) }}" class="pull-right">Ghostville</a>
+</div>
 {% endblock %}

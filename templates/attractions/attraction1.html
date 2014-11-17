@@ -1,9 +1,12 @@
 {% extends 'base/base.html' %}
 {% block title %}&ndash; Attraksjoner &ndash; 1{% endblock %}
 {% block body %}
-<div class="attraction">
-<h1 id="">Rider</h1>
-<img src="{{ url_for('static', filename='images/rides/ghostville.JPG') }}" alt="Rider" width="400" height="400"/>
-<p> Skandinavias råeste attraksjon, i loop rundt tyholttårnet! Med 10000 hestekrefter tar den deg fra 0 til 90 km/t på 1 sekund, raskere enn dagens jagerfly! Du er vektløs 10 ganger og henger opp/ned hele tiden. Er du klar for et adrenalinkick uten like?</p>
-</div>
+    <div class="attraction">
+        <h1 id="">Rider</h1>
+        <img src="{{ url_for('static', filename='images/rides/ghostville.JPG') }}" alt="Rider" width="400" height="400"/>
+        <p> Skandinavias råeste attraksjon, i loop rundt tyholttårnet! Med 10000 hestekrefter tar den deg fra 0 til 90 km/t på 1 sekund, raskere enn dagens jagerfly! Du er vektløs 10 ganger og henger opp/ned hele tiden. Er du klar for et adrenalinkick uten like?</p>
+    </div>
+    <div class="linearnav">
+        <a href="{{ url_for('attractions', attractionId=2) }}" class="pull-right">Sklia</a>
+    </div>
 {% endblock %}

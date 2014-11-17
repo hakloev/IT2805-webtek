@@ -6,4 +6,9 @@
 <img src="{{ url_for('static', filename='images/rides/ghostville.JPG') }}" alt="Ghostville"  width="400" height="400"/>
 <p> Dette er Ghostville, skummelt som bare det! Vi har skremselsgaranti. Det betyr at dersom du ikke blir skremt, så kan du prøve enda en gang! Mottoet vårt er; blir du ikke skremt første gang, så blir du hvertfall det andre gang!</p>
 </div>
+<div class="linearnav">
+    <a href="{{ url_for('attractions', attractionId=2) }}" class="pull-left">Sklia</a>
+    <a href="{{ url_for('attractions', attractionId=4) }}" class="pull-right">Svinghuska</a>
+</div>
+
 {% endblock %}

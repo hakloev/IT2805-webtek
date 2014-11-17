@@ -6,4 +6,9 @@
     <img src="{{ url_for('static', filename='images/rides/sklia.JPG') }}" alt="Barnesklia"  width="400" height="400"/>
     <p> Barnesklia er for de små, de som ikke tør å ta de kule tingene og for pysete menn som er redde for fart. Vi garanterer en kjedelig opplevelse!</p>
 </div>
+<div class="linearnav">
+    <a href="{{ url_for('attractions', attractionId=4) }}" class="pull-left">Svinghuska</a>
+    <a href="{{ url_for('attractions', attractionId=6) }}" class="pull-right">Lightning</a>
+</div>
+
 {% endblock %}
