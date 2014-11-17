@@ -2,13 +2,19 @@
 {% block title %}&ndash; Attraksjoner &ndash; Ghostville{% endblock %}
 {% block body %}
 <div class="attraction">
-<h1>Ghostville</h1>
-<img src="{{ url_for('static', filename='images/rides/ghostville.JPG') }}" alt="Ghostville"  width="400" height="400"/>
-<p> Dette er Ghostville, skummelt som bare det! Vi har skremselsgaranti. Det betyr at dersom du ikke blir skremt, så kan du prøve enda en gang! Mottoet vårt er; blir du ikke skremt første gang, så blir du hvertfall det andre gang!</p>
+    <h1>Ghostville</h1>
+    <div class="section cf">
+        <div class="col col50">
+            <img src="{{ url_for('static', filename='images/rides/ghostville.JPG') }}" alt="Ghostville"  width="400" height="400"/>
+        </div>
+        <div class="col col50">
+            <p> Dette er Ghostville, skummelt som bare det! Vi har skremselsgaranti. Det betyr at dersom du ikke blir skremt, så kan du prøve enda en gang! Mottoet vårt er; blir du ikke skremt første gang, så blir du hvertfall det andre gang!</p>
+        </div>
+    </div>
 </div>
 <div class="linearnav">
-    <a href="{{ url_for('attractions', attractionId=2) }}" class="pull-left">Sklia</a>
-    <a href="{{ url_for('attractions', attractionId=4) }}" class="pull-right">Svinghuska</a>
+    <a href="{{ url_for('attractions', attractionId=2) }}" class="pull-left arrow-left">&#10094; Sklia</a>
+    <a href="{{ url_for('attractions', attractionId=4) }}" class="pull-right arrow-right">Svinghuska  &#10095;</a>
 </div>
 
 {% endblock %}

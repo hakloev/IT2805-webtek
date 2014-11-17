@@ -65,7 +65,9 @@ input:valid {
 }
 
 img {
-    border-radius: 4px;
+    border-radius: 5px;
+    display: block;
+    margin: 0 auto;
 }
 
 .imagename {
@@ -74,27 +76,21 @@ img {
     margin-top: 0;
 }
 
-.attraction {
-    text-align: center;
+.linearnav {
+    display: block;
+    margin-top: 20px;
 }
-
 
 #wrapper {
     background: #fff;
     min-height: 100%;
-    width: 66%;
-    margin: 0 auto;
     position: relative;
-    -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,1);
-    -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,1);
-    -ms-box-shadow: 0px 0px 5px 0px rgba(0,0,0,1);
-    -o-box-shadow: 0px 0px 5px 0px rgba(0,0,0,1);
-    box-shadow: 0px 0px 5px 0px rgba(0,0,0,1);
 }
 
 #mainsection {
     padding-top: 20px;
-    padding-bottom: 250px; /* Height of footer + 50px */
+    margin: 0 40px;
+    padding-bottom: 280px; /* Height of footer + 50px */
 }
 
 #mainh1 {
@@ -103,6 +99,10 @@ img {
 
 .container {
     margin: 0 30px;
+}
+
+.attraction h1 {
+    text-align: center;
 }
 
 header {
@@ -330,9 +330,9 @@ footer p a {
 /* Flash/Messages */
 
 .flash {
-    background: rgba(243, 138, 18, 0.89);
+    background: rgba(192, 0, 0, 0.89);
     color: #fff;
-    margin: 30px;
+    margin: 10px 0 30px 0;
     padding: 10px 0 10px 20px;
     font-size: 15px;
     text-transform: uppercase;
@@ -414,7 +414,6 @@ footer p a {
 }
 
 /* Media queries */
-
 @media (min-width: 640px) and (max-width: 1000px) {
     #namebrand {
         line-height: 100px;
