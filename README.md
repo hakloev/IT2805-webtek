@@ -40,7 +40,9 @@ We have used the following technologies to implement our project:
 * Flask (based on Werkzeug and Jinja 2)
 * XML??
 
-TODO: Documenting which technologies have been used and why (for what purpose). 
+HTML5 is the markup language used to build the web site. It handles all the information displayed on the site. That is, text, images, links etc. Each of the pages on the website, is a seperate HTML file. CSS3 is used to style the web site. It is responsible for how the HTML is displayed to the visitor. In our case, we use a single style sheet which is included in all of the pages. Thus, we use the same fonts, colors etc, which makes for a consistent look on the site. Lastly, javascript is used for dynamic elements on the website. In our case, this includes the image carousel on the front page, form validation and the ticket price on the tickets page.
+
+In our implementation, we chose to use a Python framework called Flask. The most important feature of this framework for our part, is the possibility of including HTML templates. We can create a header and a footer template, which is included in all of the pages. So if we need to change something in the header for example, we can change only the template, and the changes will be reflected on all of the pages. Flask also handles our routing, and routes URL's to the correct files.
 
 ### Group members
 
