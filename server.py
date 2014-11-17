@@ -43,6 +43,10 @@ def tickets():
 def contact():
     return render_template('subpages/contact.html')
 
+@app.route("/references")
+def references():
+    return render_template('subpages/references.html')
+
 if __name__ == "__main__":
     app.run(host='0.0.0.0', 
             port=1337, 
