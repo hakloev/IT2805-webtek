@@ -4,6 +4,10 @@
 <div class="attraction">
     <h1>Lightning</h1>
     <img src="{{ url_for('static', filename='images/rides/lightning.JPG') }}" alt="Lightning"  width="400" height="400"/>
-    <p> This is the awesome rider, your mind will be blown to bits by this awesome ride</p>
+    <p> Det her er det villeste, grilleste og chilleste vi har i hele parken. Med ca 20% dødsfall, kan vi garantere deg en heseblesende opplevelse, og til og med sjansen for at det er det siste du gjør!</p>
 </div>
+<div class="linearnav">
+    <a href="{{ url_for('attractions', attractionId=5) }}" class="pull-left">Barnesklia</a>
+</div>
+
 {% endblock %}
