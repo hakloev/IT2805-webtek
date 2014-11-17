@@ -43,9 +43,13 @@ def tickets():
     else:
         return render_template('subpages/tickets.html')
 
-@app.route("/contact")
+@app.route("/contact", methods=["GET", "POST"])
 def contact():
-    return render_template('subpages/contact.html')
+    if request.method == "POST":
+        flash('Takk for din hendvendelse. Vi vil ta kontakt så fort som mulig!');
+        return render_template('index.html')
+    else: 
+        return render_template('subpages/contact.html')
 
 @app.route("/references")
 def references():

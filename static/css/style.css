@@ -3,6 +3,8 @@
 *, *:after, *:before {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
     box-sizing: border-box;
 }
 
@@ -131,7 +133,7 @@ footer {
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 200px;
+    height: 230px;
     padding: 30px;
     background-color: #ccc;
 }
@@ -275,15 +277,14 @@ footer p a {
     right: 0;
     float:right;
     background:#ff5c6f url('/static/images/nav.svg') no-repeat center center;
-    height:56px;
-    width:56px;
-    border-radius:5px;
+    height:58px;
+    width:58px;
     -webkit-border-radius:5px;
     -moz-border-radius:5px;
+    -ms-border-radius:5px;
+    -o-border-radius:5px;
+    border-radius:5px;
 }
-
-.nav ul li ul li {
-   }
 
 /* Form stuff */
 
@@ -434,10 +435,17 @@ footer p a {
 and (min-device-width: 320px) 
 and (max-device-width: 480px) {
     #namebrand {
-        display:none;
+        display: none;
     }
     html {
         font-size: 140%;
+    }
+    footer {
+        height: auto;
+        position: relative;
+    }
+    #mainsection {
+        padding-bottom: 50px;
     }
     #wrapper {
         width: 100%;
