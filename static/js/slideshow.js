@@ -17,7 +17,7 @@ var Slideshow = (function() {
             var image = document.createElement("img");
             image.className = "slide";
             image.id = img[i];
-            image.src = (url + img[i] + ".JPG").toLowerCase();
+            image.src = ((url + img[i]).toLowerCase() + ".JPG");
             image.alt = "Attraksjon: " + img[i];
             container.appendChild(image);
             if (i == 0) {
