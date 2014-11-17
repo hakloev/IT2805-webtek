@@ -8,6 +8,7 @@ app.secret_key = 'r\xe4@\x00\xa4\xf9\xe6.@S\x08/\xday\xf8\x9b\xfeR\xbe\x17\xfdK[
 def index():
     return render_template('index.html')
 
+@app.route("/attractions")
 @app.route("/attractions/overview")
 @app.route("/attractions/id/<string:attractionId>")
 def attractions(attractionId=None):
