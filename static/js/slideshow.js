@@ -1,15 +1,6 @@
 /**
  * Created by trulsmp on 14/11/14.
  */
-var image1 = new Image();
-image1.src = "/static/images/rides/sklia.JPG";
-var image2 = new Image();
-image2.src = "/static/images/rides/lightning.JPG";
-var image3 = new Image();
-image3.src = "/static/images/rides/ghostville.JPG";
-var image4 = new Image();
-image4.src = "/static/images/rides/svinghuska.JPG";
-
 var Slideshow = (function() {
     
     var url = "/static/images/rides/";
