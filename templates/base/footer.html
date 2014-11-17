@@ -3,13 +3,36 @@
         <div class="section cf">
             <div class="col col20">
                 <h4><a href="{{ url_for('attractions') }}">Attraksjoner</a></h4>
+                <h5><a href="{{ url_for('attractions', attractionId=1)}}">Rider</a></h5>
+                <h5><a href="{{ url_for('attractions', attractionId=2)}}">Sklia</a></h5>
+                <h5><a href="{{ url_for('attractions', attractionId=3)}}">Ghostville</a></h5>
+                <h5><a href="{{ url_for('attractions', attractionId=4)}}">Svinghuska</a></h5>
+                <h5><a href="{{ url_for('attractions', attractionId=5)}}">Barnesklia</a></h5>
+                <h5><a href="{{ url_for('attractions', attractionId=6)}}">Lightning</a></h5>
+            </div>
+            <div class="col col20">
                 <h4><a href="{{ url_for('restaurant') }}">Restaurant</a></h4>
                 <h4><a href="{{ url_for('events') }}">Arrangement</a></h4>
                 <h4><a href="{{ url_for('tickets') }}">Billetter</a></h4>
                 <h4><a href="{{ url_for('contact') }}">Kontakt</a></h4>
             </div>
-            <div class="col col20">
-
+            <div class="col col20 pull-right">
+                <h4>Postadresse:</h4>
+                <address>
+                Gløseberg <br>
+                Postboks 1000 <br>
+                1814 Gløshaugen <br>
+                Norge 
+                </address>
+            </div>
+            <div class="col col20 pull-right">
+                <h4>Besøksadresse</h4>
+                <address>
+                Gløseberg<br>
+                Gløsebergveien 5<br>
+                1814 Gløshaugen<br>
+                Norge
+                </address>
             </div>
         </div>
     </div>
