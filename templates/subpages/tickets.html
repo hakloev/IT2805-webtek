@@ -4,7 +4,7 @@
     <h1>Billettinformasjon</h1>
     <p> Her kan du bestille billetter til gløseberg! Billettene koster 100 kr per stykk, og en bekreftelse vil sendes på epost etter at bestillingen er mottatt. Vennligst legg pengene i diskettstasjonen før du bekrefter bestillingen.</p>    
     <h3>Bestillingsskjema</h3>
-    <form action="/tickets" method="POST">
+    <form id="ticketForm" name="ticketForm "action="/tickets" onsubmit="return Forms.validateTickets();" method="POST">
         <div class="section cf">
             <div class="col col33">
                 <label for="name">Navn:</label>
@@ -49,4 +49,5 @@
 
 {% block scriptblock %}
     <script src="{{ url_for('static', filename="js/tickets.js") }}" type="text/javascript"></script>
+    <script src="{{ url_for('static', filename="js/forms.js") }}" type="text/javascript"></script>
 {% endblock %}
