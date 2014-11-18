@@ -16,7 +16,7 @@ html, body {
 }
 
 h1, h2, h3, h4, h5, h6, a  {
-    font-family: "Skranji" cursive;
+    font-family: "Skranji" sans-serif;
 }
 
 a {
@@ -28,52 +28,10 @@ p, label {
     font-family: "PT Sans Caption","Georgia", sans-serif;
 }
 
-label {
-    display: block;
-}
-
-input, textarea {
-    margin: 10px 0;
-}
-
-input:invalid {
-    border: 1px double red;
-    -webkit-box-shadow: 0 0 5px red;
-    -moz-box-shadow: 0 0 5px red;
-    -ms-box-shadow: 0 0 5px red;
-    -o-box-shadow: 0 0 5px red;
-    box-shadow: 0 0 5px red;
-    -webkit-transition: box-shadow .5s ease-in;
-    -moz-transition: box-shadow .5s ease-in; 
-    -ms-transition: box-shadow .5s ease-in;
-    -o-transition: box-shadow .5s ease-in; 
-    transition: box-shadow .5s ease-in;
-}
-
-input:valid {
-    border: 1px double green;
-    -webkit-box-shadow: 0 0 5px green;
-    -moz-box-shadow: 0 0 5px green;
-    -ms-box-shadow: 0 0 5px green;
-    -o-box-shadow: 0 0 5px green;
-    box-shadow: 0 0 5px green;
-    -webkit-transition: box-shadow .5s ease-in;
-    -moz-transition: box-shadow .5s ease-in; 
-    -ms-transition: box-shadow .5s ease-in;
-    -o-transition: box-shadow .5s ease-in; 
-    transition: box-shadow .5s ease-in;
-}
-
 img {
     border-radius: 5px;
     display: block;
     margin: 0 auto;
-}
-
-.imagename {
-    text-align: center;
-    margin-bottom: 3px;
-    margin-top: 0;
 }
 
 .linearnav {
@@ -81,7 +39,11 @@ img {
     margin-top: 20px;
 }
 
-#wrapper {
+.centering {
+    text-align: center;
+}
+
+#container {
     background: #fff;
     min-height: 100%;
     position: relative;
@@ -93,40 +55,19 @@ img {
     padding-bottom: 280px; /* Height of footer + 50px */
 }
 
-#mainh1 {
+.title {
     margin-top: 0;
 }
 
-.container {
-    margin: 0 30px;
+#temperature {
+    font-size: 50px;
 }
 
 .attraction h1 {
     text-align: center;
 }
 
-header {
-    background: #009636;
-}
-
-.textbox {
-    background: white;
-    border: 1px double #DDD;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -ms-border-radius: 5px;
-    -o-border-radius: 5px;
-    border-radius: 5px;
-    -webkit-box-shadow: 0 0 5px #333;
-    -moz-box-shadow: 0 0 5px #333;
-    -ms-box-shadow: 0 0 5px #333;
-    -o-box-shadow: 0 0 5px #333;
-    box-shadow: 0 0 5px #333;
-    color: #666;
-    outline: none;
-    height: 25px;
-    width: 275px;
-}
+/* Footer stuff */
 
 footer {
     position: absolute;
@@ -138,36 +79,40 @@ footer {
     background-color: #ccc;
 }
 
-/* Footer stuff */
-
 footer h4 {
     margin: 10px 0 5px 0;
+}
+
+footer h4 a {
+    color: black;
+    border-bottom: 3px solid #009636;
+    -webkit-transition: border-color .5s ease-in;
+    -moz-transition: border-color .5s ease-in;
+    -ms-transition: border-color .5s ease-in;
+    -o-transition: border-color .5s ease-in;
+    transition: border-color .5s ease-in;
+}
+
+footer h4 a:hover {
+    border-color: #28CB1D;
 }
 
 footer h5 {
     margin: 0;
 }
 
+footer h5 a {
+    color: black;
+}
+
 footer h5:first-of-type {
     margin-top: 10px;
 }
 
-footer h4 a {
-    color: black;
-    border-bottom: 3px solid #009636;
-}
-
-footer p {
-   margin: 0;
-}
-
-footer p a {
-    color: black;
-    font-size: 12px;  
-    padding-left: 8px;
-}
-
 /* Navbar stuff */
+header {
+    background: #009636;
+}
 
 #namebrand {
     text-align: center;
@@ -178,13 +123,7 @@ footer p a {
     margin: 0;
     vertical-align: middle;
     padding: 10px;
-    background-color: #fff;
-}
-
-#namebrand {
-    background-image: url('/static/images/header.png');
-    background-repeat: no-repeat;
-    background-position: center;
+    background: url('/static/images/header.png') no-repeat center center #fff;
 }
 
 #namebrand a {
@@ -249,13 +188,13 @@ footer p a {
     position: absolute;
     top: 35px;
     visibility: hidden;
-    z-index: 1;
+    z-index: 10;
     list-style-type: none;
-    -webkit-transition: all .4s ease;
-    -moz-transition: all .4s ease;
-    -ms-transition: all .4s ease;
-    -o-transition: all .4s ease;
-    transition: all .4s ease;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
 }
 
 .nav li:hover ul {
@@ -286,7 +225,7 @@ footer p a {
     border-radius:5px;
 }
 
-/* Form stuff */
+/* Forms */
 
 #submit {
     padding: 5px;
@@ -300,8 +239,64 @@ footer p a {
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
     border-radius: 5px;
-
 }
+
+.textbox {
+    background: white;
+    border: 1px double #DDD;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-box-shadow: 0 0 5px #333;
+    -moz-box-shadow: 0 0 5px #333;
+    -ms-box-shadow: 0 0 5px #333;
+    -o-box-shadow: 0 0 5px #333;
+    box-shadow: 0 0 5px #333;
+    color: #666;
+    outline: none;
+    height: 25px;
+    width: 275px;
+}
+
+label {
+    display: block;
+}
+
+input, textarea {
+    margin: 10px 0;
+}
+
+input:invalid {
+    border: 1px solid red;
+    -webkit-box-shadow: 0 0 3px red;
+    -moz-box-shadow: 0 0 3px red;
+    -ms-box-shadow: 0 0 3px red;
+    -o-box-shadow: 0 0 3px red;
+    box-shadow: 0 0 3px red;
+    -webkit-transition: box-shadow .3s ease-in;
+    -moz-transition: box-shadow .3s ease-in; 
+    -ms-transition: box-shadow .3s ease-in;
+    -o-transition: box-shadow .3s ease-in; 
+    transition: box-shadow .3s ease-in;
+}
+
+input:valid {
+    border: 1px double green;
+    -webkit-box-shadow: 0 0 3px green;
+    -moz-box-shadow: 0 0 3px green;
+    -ms-box-shadow: 0 0 3px green;
+    -o-box-shadow: 0 0 3px green;
+    box-shadow: 0 0 3px green;
+    -webkit-transition: box-shadow .3s ease-in;
+    -moz-transition: box-shadow .3s ease-in; 
+    -ms-transition: box-shadow .3s ease-in;
+    -o-transition: box-shadow .3s ease-in; 
+    transition: box-shadow .3s ease-in;
+}
+
+
 
 /* Slide show */
 
@@ -314,7 +309,10 @@ footer p a {
     width: 400px;
     height: 400px;
     position: absolute;
+    left: 0;
     right: 0;
+    margin-left: auto;
+    margin-right: auto;
     opacity: 0;
     -webkit-transition: opacity 2s linear;
     -moz-transition: opacity 2s linear;
@@ -368,6 +366,7 @@ footer p a {
     float: left;
     padding-left: 15px;
     padding-right: 15px;
+    word-break: break-word;
 }
 
 .col:first-child {
