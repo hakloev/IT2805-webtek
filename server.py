@@ -44,8 +44,7 @@ def events():
 @app.route("/tickets", methods=["GET", "POST"])
 def tickets():
     if request.method == "POST":
-        flash('Takk for kjøpet! En bekreftelse på %s billett(er) er sendt til %s!' % (request.form['antallBilletter'], request.form['email']))
-        print(request.form)
+        flash(u'Takk for kjøpet! En bekreftelse på %s billett(er) er sendt til %s!' % (request.form['antallBilletter'], request.form['email']))
         saveTickets(request.form)
         return render_template('index.html')
     else:
@@ -54,7 +53,7 @@ def tickets():
 @app.route("/contact", methods=["GET", "POST"])
 def contact():
     if request.method == "POST":
-        flash('Takk for din hendvendelse. Vi vil ta kontakt så fort som mulig!');
+        flash(u'Takk for din hendvendelse. Vi vil ta kontakt så fort som mulig!');
         return render_template('index.html')
     else: 
         return render_template('subpages/contact.html')
@@ -65,7 +64,6 @@ def references():
 
 
 def saveTickets(form):
-
     #Appends the ticket information to a xml file to be showed on the website
     xml = ET.parse('static/tickets/tickets.xml')
     ticks = xml.getroot()
@@ -94,7 +92,7 @@ def saveTickets(form):
     dom.insertBefore(pi, root)
     f = open('static/tickets/tickets.xml', "w")
     string = dom.toxml();
-    f.write(string)
+    f.write(unicode(string))
     f.close()
 
     return
