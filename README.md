@@ -50,11 +50,15 @@ We have used the following technologies to implement our project:
     > In our implementation, we chose to use a Python framework called Flask. The most important feature of this framework for our part, is the possibility of including HTML templates. We can create a header and a footer template, which is included in all of the pages. So if we need to change something in the header for example, we can change only the template, and the changes will be reflected on all of the pages. Flask also handles our routing, and routes URL's to the correct files.
 
 * XML
-    > XML is a markup language used for sharing data between systems, as well as defining how data should be organized. We use XML when we collect weather data from [yr](http://yr.no) to simulate a weather forecast for the theme park. The API provided by yr returns a XML file containing weather data. We then use JavaScript to parse the XML and add the data to the frontpage. Also, all ticket purchases are added to a XML-document. The following pages uses XML
+    > XML is a markup language used for sharing data between systems, as well as defining how data should be organized. We use XML when we collect weather data from [yr](http://yr.no) to simulate a weather forecast for the theme park. The API provided by yr returns a XML file containing weather data. We then use JavaScript to parse the XML and add the data to the frontpage. Also, all ticket purchases are added to a XML-document. The following pages uses XML:
     > * /
 
 * JavaScript
-    > Lastly, JavaScript is used for dynamic elements on the website. In our case, this includes the image carousel on the front page, form validation and the ticket price on the tickets page. 
+    > Lastly, JavaScript is used for dynamic elements on the website. In our case, this includes the image carousel on the front page, form validation and the ticket price on the tickets page. The following pages uses XML:
+    > * /
+    > * /tickets
+    > * /contact
+    > * Also, every page include the responsive.js file, but since we do not completely support media queries, we chose not to discuss this any further. 
 
 ### Group members
 
