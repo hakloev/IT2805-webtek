@@ -1,0 +1,3 @@
+<?xml version="1.0" ?><?xml-stylesheet type="text/xsl" href="xml_style.xsl"?><tickets>
+    
+<ticket><name>Truls Pettersen</name><email>truls.petters1@gmail.com</email><antallBilletter>3</antallBilletter><totalPris>300</totalPris></ticket><ticket><name>Truls Pettersen</name><email>truls.petters1@gmail.com</email><antallBilletter>3</antallBilletter><totalPris>300</totalPris></ticket><ticket><name>Truls Mørk pettersen</name><email>trulsmp@stud.ntnu.no</email><antallBilletter>4</antallBilletter><totalPris>400</totalPris></ticket></tickets>
