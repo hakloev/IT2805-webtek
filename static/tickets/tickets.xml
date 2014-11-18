@@ -1,3 +1,4 @@
-<?xml version="1.0" ?><?xml-stylesheet type="text/xsl" href="xml_style.xsl"?><tickets>
+<?xml version='1.0' encoding='utf-8'?>
+<tickets>
 
-<ticket><name>Per</name><email>me@per.com</email><antallBilletter>3</antallBilletter><totalPris>300</totalPris></ticket><ticket><name>Nils</name><email>nils@me.com</email><antallBilletter>5</antallBilletter><totalPris>500</totalPris></ticket></tickets>
+</tickets>

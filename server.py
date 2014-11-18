@@ -85,18 +85,6 @@ def saveTickets(form):
 
     xml.write('static/tickets/tickets.xml',encoding='utf-8', xml_declaration=True)
 
-    #add the stylesheet to the XML file
-    dom = minidom.parse('static/tickets/tickets.xml')
-    pi = dom.createProcessingInstruction('xml-stylesheet', 'type="text/xsl" href="xml_style.xsl"')
-    root = dom.firstChild
-    dom.insertBefore(pi, root)
-    f = open('static/tickets/tickets.xml', "w")
-    string = dom.toxml();
-    f.write(unicode(string))
-    f.close()
-
-    return
-
 if __name__ == "__main__":
     app.run(host='0.0.0.0', 
             port=1337, 
