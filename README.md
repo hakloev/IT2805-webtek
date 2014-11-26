@@ -1,4 +1,4 @@
-GLOSEBERG
+GLØSEBERG
 =========
 
 ### Setup
@@ -38,13 +38,31 @@ We have used the following technologies to implement our project:
 * CSS3
 * JavaScript
 * Flask (based on Werkzeug and Jinja 2)
-* XML??
+* XML
 
-HTML5 is the markup language used to build the web site. It handles all the information displayed on the site. That is, text, images, links etc. Each of the pages on the website, is a seperate HTML file. CSS3 is used to style the web site. It is responsible for how the HTML is displayed to the visitor. In our case, we use a single style sheet which is included in all of the pages. Thus, we use the same fonts, colors etc, which makes for a consistent look on the site. Lastly, javascript is used for dynamic elements on the website. In our case, this includes the image carousel on the front page, form validation and the ticket price on the tickets page.
+#### Documentation of technologies
 
-In our implementation, we chose to use a Python framework called Flask. The most important feature of this framework for our part, is the possibility of including HTML templates. We can create a header and a footer template, which is included in all of the pages. So if we need to change something in the header for example, we can change only the template, and the changes will be reflected on all of the pages. Flask also handles our routing, and routes URL's to the correct files.
+* HTML and CSS
+    > HTML5 is the markup language used to build the web site. It handles all the information displayed on the site. That is, text, images, links etc. Each of the pages on the website, is a seperate HTML file. CSS3 is used to style the web site. It is responsible for how the HTML is displayed to the visitor. In our case, we use a single style sheet which is included in all of the pages. Thus, we use the same fonts, colors etc, which makes for a consistent look on the site. 
+    > * HTML and CSS is used on every page on the website
 
+<<<<<<< HEAD
 XML is a markup language used for sharing data between systems, as well as defining how data should be organized. In our implementation, we get an xml file from the yr.no API, which we parse with javascript. This enables the weather to be updated on refresh. Keep in mind that the XML file is static, and is not updated, it's intended to demonstrate the possibility.
+=======
+* Flask
+    > In our implementation, we chose to use a Python framework called Flask. The most important feature of this framework for our part, is the possibility of including HTML templates. We can create a header and a footer template, which is included in all of the pages. So if we need to change something in the header for example, we can change only the template, and the changes will be reflected on all of the pages. Flask also handles our routing, and routes URL's to the correct files.
+
+* XML
+    > XML is a markup language used for sharing data between systems, as well as defining how data should be organized. We use XML when we collect weather data from [yr](http://yr.no) to simulate a weather forecast for the theme park. The API provided by yr returns a XML file containing weather data. We then use JavaScript to parse the XML and add the data to the frontpage.The following pages uses XML:
+    > * /
+
+* JavaScript
+    > Lastly, JavaScript is used for dynamic elements on the website. In our case, this includes the image carousel on the front page, form validation and the ticket price on the tickets page. The following pages uses javascript:
+    > * /
+    > * /tickets
+    > * /contact
+    > * Also, every page include the responsive.js file, but since we do not completely support media queries, we chose not to discuss this any further. 
+>>>>>>> FETCH_HEAD
 
 ### Group members
 

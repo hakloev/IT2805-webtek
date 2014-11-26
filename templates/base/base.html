@@ -11,9 +11,9 @@
     <script src="{{ url_for('static', filename='js/responsive.js') }}" type="text/javascript"></script>
 </head>
 <body>
-    <div id="wrapper">
+    <div id="container">
         {% include 'base/header.html' %}
-        <section id="mainsection" class="container">
+        <section id="mainsection">
             {% for message in get_flashed_messages() %}
             <div class="flash">{{ message }}</div>
             {% endfor %}

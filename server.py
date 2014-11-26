@@ -3,6 +3,9 @@
 
 import os
 from flask import Flask, render_template, flash, redirect, url_for, request
+from xml.etree import ElementTree as ET
+from xml.dom import minidom
+
 
 app = Flask(__name__)
 app.secret_key = 'r\xe4@\x00\xa4\xf9\xe6.@S\x08/\xday\xf8\x9b\xfeR\xbe\x17\xfdK[\x90'
@@ -41,7 +44,7 @@ def events():
 @app.route("/tickets", methods=["GET", "POST"])
 def tickets():
     if request.method == "POST":
-        flash('Takk for kjøpet! En bekreftelse på %s billett(er) er sendt til %s!' % (request.form['antallBilletter'], request.form['email']))
+        flash(u'Takk for kjøpet! En bekreftelse på %s billett(er) er sendt til %s!' % (request.form['antallBilletter'], request.form['email']))
         return render_template('index.html')
     else:
         return render_template('subpages/tickets.html')
@@ -49,7 +52,7 @@ def tickets():
 @app.route("/contact", methods=["GET", "POST"])
 def contact():
     if request.method == "POST":
-        flash('Takk for din hendvendelse. Vi vil ta kontakt så fort som mulig!');
+        flash(u'Takk for din hendvendelse. Vi vil ta kontakt så fort som mulig!');
         return render_template('index.html')
     else: 
         return render_template('subpages/contact.html')

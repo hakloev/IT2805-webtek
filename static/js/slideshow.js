@@ -7,7 +7,7 @@ var Slideshow = (function() {
     var step = 1;
     var img = ["Sklia",
                "Lightning",
-               "GhostVille",
+               "Rider",
                "Svinghuska"];
     var prevImg = img[0];
 

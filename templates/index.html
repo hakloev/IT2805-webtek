@@ -3,20 +3,39 @@
 {% block body %}
     <div class="section cf">
         <div class="col col50">
-            <h1 id="mainh1">Velkommen til Gløseberg!</h1>
+            <h1 class="title">Velkommen til Gløseberg!</h1>
             <p> Gløseberg er en fantastisk fornøyelsespark, midt på berget i Gløs. Vi har masse phete attraksjoner. Ta også gjerne turen innom et av våre spisesteder, der du kan få fantastisk mat. Kanskje vil du også møte på rulle, som er kjent for å ture innom parken i ny og ne.
             </p>
             <p> En ting er hvertfall sikkert; kommer du innom parken vår, kommer du til å få en opplevelse for livet! Ellers er det ikke så mye å si, annet enn at du må besøke billettsida og bestille med en gang!
             </p>
-            <h3>Været på Gløseberg</h3>
-             
+            <section id="weather-widget">
+                <h3>Været på Gløseberg</h3>
+                <p>Usikker på om du skal ta turen? Sjekk været her på siden.</p>
+                <div class="section cf">
+                    <div class="col col20">
+                        <img id="weather-icon" alt="Værikon"></img>
+                    </div>
+                    <div class="col col20">
+                        <div id="temperature"></div>
+                    </div>
+                    <div class="col col50">
+                        <div id="wind-speed"></div>
+                        <div id="wind-strength"></div>
+                        <div id="rain"></div>
+                    </div>
+                </div>
+
+               <div id="forecast"></div>
+               <div id="weather-copyright"></div>
+            </section>
         </div>
         <div class="col col50" id="slideshowcontainer">
-            <h4 class="imagename" id="imagename"></h4>
+            <h4 id="imagename" class="centering"></h4>
         </div>
     </div>
 {% endblock %}
 
 {% block scriptblock %}
-    <script src="{{ url_for('static', filename='js/slideshow.js') }}"> </script>
+    <script src="{{ url_for('static', filename='js/slideshow.js') }}" type="text/javascript"></script>
+    <script src="{{ url_for('static', filename='js/weather.js') }}" type="text/javascript"></script>
 {% endblock %}
