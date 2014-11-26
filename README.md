@@ -44,7 +44,7 @@ HTML5 is the markup language used to build the web site. It handles all the info
 
 In our implementation, we chose to use a Python framework called Flask. The most important feature of this framework for our part, is the possibility of including HTML templates. We can create a header and a footer template, which is included in all of the pages. So if we need to change something in the header for example, we can change only the template, and the changes will be reflected on all of the pages. Flask also handles our routing, and routes URL's to the correct files.
 
-XML is a markup language used for sharing data between systems, as well as defining how data should be organized. We chose to use XML on the tickets form. All ticket purchases will be added to the document.
+XML is a markup language used for sharing data between systems, as well as defining how data should be organized. In our implementation, we get an xml file from the yr.no API, which we parse with javascript. This enables the weather to be updated on refresh. Keep in mind that the XML file is static, and is not updated, it's intended to demonstrate the possibility.
 
 ### Group members
 
